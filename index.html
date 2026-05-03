@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yashvi Desai | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+
+        <h1 class="logo">Portfolio</h1>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <!-- Dark Mode Button -->
+        <button id="theme-toggle">
+            🌙
+        </button>
+
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <h3>WELCOME TO MY PORTFOLIO</h3>
+
+                <h1>
+                    Hi, I'm <span>Yashvi Desai</span>
+                </h1>
+
+                <h2>
+                    <span class="typing"></span>
+                </h2>
+
+                <p>
+                    Passionate about building modern and
+                    user-friendly web applications using
+                    ASP.NET, PHP and MVC architecture.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="btn-primary">
+                        View Projects
+                    </button>
+
+                    <a href="resume/resume.pdf" target="_blank">
+
+                        <button class="btn-secondary">
+                            ⬇ Download Resume
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Profile Image -->
+            <div class="hero-image">
+
+                <div class="image-circle">
+
+                    <img src="images/profile.jpeg" alt="Profile">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about hidden" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            Aspiring Web Developer with hands-on experience in
+            ASP.NET and PHP, focused on building efficient and
+            user-centric web applications using MVC architecture.
+        </p>
+
+    </section>
+
+    <!-- Skills -->
+    <section class="skills hidden" id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">PHP</div>
+        <div class="skill-box">ASP.NET Core</div>
+        <div class="skill-box">MVC Architecture</div>
+        <div class="skill-box">Bootstrap</div>
+        <div class="skill-box">MySQL</div>
+        <div class="skill-box">SQL Server</div>
+        <div class="skill-box">Entity Framework Core</div>
+
+    </section>
+
+    <!-- Projects -->
+    <section class="projects hidden" id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-card">
+
+            <h3>Society Management System</h3>
+
+            <h4>ASP.NET MVC + SQL Server</h4>
+
+            <p>
+                Developed a web-based application to manage
+                society members, complaints and notices efficiently.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Internship -->
+    <section class="projects hidden">
+
+        <h2>Internship Experience</h2>
+
+        <div class="project-card">
+
+            <h3>Web Development Intern</h3>
+
+            <h4>Krtya Technologies Pvt Ltd</h4>
+
+            <p>
+                Worked on full-stack enterprise web applications
+                using ASP.NET MVC and SQL Server.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact hidden" id="contact">
+
+        <h2>Stay In Touch</h2>
+
+        <p>
+            Feel free to contact me for internships,
+            projects, collaborations, or opportunities.
+        </p>
+
+        <form id="contact-form">
+
+            <div class="input-group">
+
+                <input
+                    type="text"
+                    name="user_name"
+                    placeholder="Your Name"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="email"
+                    name="user_email"
+                    placeholder="Your Email"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <input
+                    type="tel"
+                    name="user_phone"
+                    placeholder="Your Phone Number"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required></textarea>
+
+            </div>
+
+            <div class="contact-buttons">
+
+                <button type="submit" class="btn-primary">
+                    Send Message
+                </button>
+
+                <button type="reset" class="btn-secondary">
+                    Clear
+                </button>
+
+            </div>
+
+        </form>
+
+        <p id="form-status"></p>
+
+        <br><br>
+
+        <p>Email: yashvidesai206@gmail.com</p>
+
+        <p>Phone: +91 7046484797</p>
+
+        <p>GitHub: github.com/yashviddesai206-bit</p>
+
+        <p>Location: Surat, Gujarat</p>
+
+    </section>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Contact Form Script -->
+    <script>
+
+        // Replace with your EmailJS Public Key
+        emailjs.init("YOUR_PUBLIC_KEY");
+
+        const form = document.getElementById("contact-form");
+
+        const statusText = document.getElementById("form-status");
+
+        form.addEventListener("submit", function (e) {
+
+            e.preventDefault();
+
+            statusText.innerHTML = "Sending message...";
+
+            emailjs.sendForm(
+                "YOUR_SERVICE_ID",
+                "YOUR_TEMPLATE_ID",
+                this
+            )
+
+            .then(function () {
+
+                statusText.innerHTML =
+                    "✅ Message sent successfully!";
+
+                form.reset();
+
+            })
+
+            .catch(function (error) {
+
+                statusText.innerHTML =
+                    "❌ Failed to send message";
+
+                console.log(error);
+
+            });
+
+        });
+
+    </script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
